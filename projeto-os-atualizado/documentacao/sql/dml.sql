@@ -1,13 +1,17 @@
--- Inserindo usuários de teste
+-- Inserir usuários de teste
 INSERT INTO usuarios (nome, email, senha)
 VALUES 
-('Tiago', 'admin@email.com', '1013'),
-('Maria Silva', 'maria@email.com', 'senha123'),
-('João Souza', 'joao@email.com', 'abc123');
+('Tiago', 'tiagoback23@gmail.com', '1234'),
+('Admin', 'admin@sistema.com', 'admin');
 
--- Inserindo ordens de serviço de teste
-INSERT INTO ordem_servico (id_cliente, data_os, defeito, status)
-VALUES
-(1, '2025-12-06', 'Notebook não liga', 'Aberta'),
-(2, '2025-12-06', 'Celular com tela quebrada', 'Em andamento'),
-(3, '2025-12-06', 'Impressora não imprime', 'Concluída');
+-- Inserir clientes de teste
+INSERT INTO clientes (nome, email)
+VALUES 
+('Cliente A', 'clienteA@email.com'),
+('Cliente B', 'clienteB@email.com');
+
+-- Inserir ordens de serviço de teste
+INSERT INTO ordens_servico (id_cliente, data_os, defeito, status)
+VALUES 
+(1, '2025-12-06', 'Computador não liga', 'Aberta'),
+(2, '2025-12-07', 'Impressora não imprime', 'Em andamento');
